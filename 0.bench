@@ -1,0 +1,7 @@
+goos: darwin
+goarch: amd64
+pkg: GoPProf
+cpu: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+BenchmarkSolve-12    	  658537	     20655 ns/op
+PASS
+ok  	GoPProf	14.640s
