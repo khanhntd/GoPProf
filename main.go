@@ -38,11 +38,9 @@ func solve(contents []byte) int {
 		}
 		min, _ := strconv.Atoi(matches[1])
 		max, _ := strconv.Atoi(matches[2])
-		pattern := []rune(matches[3])
-		data := string(matches[4])
 		x := 0
-		for _, c := range data {
-			if c == pattern[0] {
+		for i, _ := range matches[4] {
+			if matches[4][i] == matches[3][0] {
 				x++
 			}
 		}
