@@ -1,10 +1,15 @@
 package main
 
 import (
-	"github.com/stretchr/testify/assert"
 	"os"
+	"sync"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
+
+var ms = sync.Mutex{}
+var labels = map[string]string{"label": "label2"}
 
 func TestSolve(t *testing.T) {
 	c, _ := os.ReadFile("1.txt")
